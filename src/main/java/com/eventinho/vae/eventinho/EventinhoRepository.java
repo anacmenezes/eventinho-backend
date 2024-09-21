@@ -1,5 +1,6 @@
 package com.eventinho.vae.eventinho;
 
-public class EventinhoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+public interface EventinhoRepository extends JpaRepository<Eventinho, Long> {
 }

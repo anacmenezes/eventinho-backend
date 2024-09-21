@@ -1,5 +1,4 @@
 package com.eventinho.vae.eventinho;
 
-public class EventinhoRequestDTO {
-
+public record EventinhoRequestDTO(String title, String image, Integer price) {
 }
