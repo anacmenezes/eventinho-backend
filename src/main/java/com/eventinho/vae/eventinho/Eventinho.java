@@ -21,12 +21,14 @@ public class Eventinho {
 	    private Long id;
 	    private String title;
 	    private String image;
-	    private Integer price;
+	    private String price;
+	    private String date;
 
 	    public Eventinho(EventinhoRequestDTO data){
 	        this.image = data.image();
 	        this.price = data.price();
 	        this.title = data.title();
+	        this.date = data.date();
 	    }
 	    
 	    public Eventinho() {
@@ -56,11 +58,19 @@ public class Eventinho {
 			this.image = image;
 		}
 
-		public Integer getPrice() {
+		public String getPrice() {
 			return price;
 		}
 
-		public void setPrice(Integer price) {
+		public void setPrice(String price) {
 			this.price = price;
+		}
+
+		public String getDate() {
+			return date;
+		}
+
+		public void setDate(String date) {
+			this.date = date;
 		}
 	}
